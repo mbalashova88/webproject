@@ -21,7 +21,7 @@ def html_page(page_name):
 
 
 def write_to_csv(data):
-    with open("database.csv", newline='', mode ='a') as database2:
+    with open("database.csv", newline='', mode ='a', encoding='utf-8') as database2:
         email = data["email"]
         subject = data["subject"]
         message = data["message"]
